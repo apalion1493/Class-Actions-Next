@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+}
+
+@layer components {
+  .container {
+    @apply px-4 lg:px-3 w-full minsm:max-w-[672px] minmd:max-w-[800px] minlg:max-w-[1056px] minxl:max-w-[1328px];
+  }
+
+  .container-full {
+    @apply pl-8 pr-6 w-full max-w-full md:px-4;
+  }
+
+  .w-full {
+    width: 100% !important;
+  }
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    @apply text-gray-900;
+  }
+}
